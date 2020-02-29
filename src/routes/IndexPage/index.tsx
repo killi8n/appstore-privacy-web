@@ -2,6 +2,7 @@ import React from 'react';
 import Styled from 'styled-components';
 import withTemplate from '../../lib/HoC/withTemplate';
 import DownloadButton from '../../components/DownloadButton';
+import media from '../../lib/style/media';
 
 const Wrapper = Styled.div`
     height: calc(100vh - 4.5rem - 3.5rem - 3.5rem);
@@ -15,6 +16,12 @@ const ButtonsWrapper = Styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    width: 100%;
+
+    ${media.medium} {
+        flex-direction: column;
+    }
 `;
 
 const IndexPage = () => {
@@ -22,7 +29,7 @@ const IndexPage = () => {
         <Wrapper>
             <ButtonsWrapper>
                 <DownloadButton title="App Store" />
-                <DownloadButton title="Google Play Store" />
+                <DownloadButton title="Play Store" />
             </ButtonsWrapper>
         </Wrapper>
     );

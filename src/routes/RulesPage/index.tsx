@@ -1,9 +1,14 @@
 import React from 'react';
+import Styled from 'styled-components';
 import withTemplate from '../../lib/HoC/withTemplate';
+
+const Wrapper = Styled.div`
+    /* width: 100%; */
+`;
 
 const RulesPage = () => {
     return (
-        <div>
+        <Wrapper>
             <strong>1. 개인정보의 처리 목적</strong>
             <br />
             <br />
@@ -251,7 +256,7 @@ const RulesPage = () => {
                     <br />
                 </p>
             </p>
-        </div>
+        </Wrapper>
     );
 };
 

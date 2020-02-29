@@ -1,6 +1,7 @@
 import React from 'react';
 import Styled from 'styled-components';
 import { withRouter, Link } from 'react-router-dom';
+import media from '../../lib/style/media';
 
 const Wrapper = Styled.div`
     display: flex;
@@ -17,6 +18,10 @@ const Wrapper = Styled.div`
 const HeaderTitle = Styled.h1`
     color: #ffffff;
     user-select: none;
+
+    ${media.medium} {
+        font-size: 1.2rem;
+    }
 `;
 
 const RightMenus = Styled.div`
@@ -27,6 +32,10 @@ const RightMenus = Styled.div`
 
 const Menu = Styled.h4`
     color: #ffffff;
+
+    ${media.medium} {
+        font-size: 0.85rem;
+    }
 `;
 
 const Header = () => {

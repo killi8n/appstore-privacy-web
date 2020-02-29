@@ -1,12 +1,14 @@
 import React from 'react';
 import Styled from 'styled-components';
 import Header from '../../components/Header';
+import media from '../style/media';
 
 const InnerWrapper = Styled.div`
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding: 3.5rem;
+
+    ${media.medium} {
+        padding: 1.5rem;
+    }
 `;
 
 const withTemplate = (WrappedComponent: React.ComponentType) => {

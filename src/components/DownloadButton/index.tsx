@@ -1,9 +1,15 @@
 import React from 'react';
 import Styled from 'styled-components';
+import media from '../../lib/style/media';
 
 const Wrapper = Styled.button`
     & + & {
         margin-left: 2.25rem;
+
+        ${media.medium} {
+            margin-left: 0rem;
+            margin-top: 0.5rem;
+        }
     }
 
     background-color: #0ca678;
@@ -11,6 +17,8 @@ const Wrapper = Styled.button`
     padding-bottom: 1.25rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+
+    width: 45%;
 
     outline: none;
     border: none;
@@ -21,6 +29,11 @@ const Wrapper = Styled.button`
 
     border-radius: 2px;
     cursor: pointer;
+
+    ${media.medium} {
+        width: 100%;
+        font-size: 0.95rem;
+    }
 `;
 
 interface Props {
