@@ -1,13 +1,7 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
-import {
-    IndexPage,
-    RulesPage,
-    NotFoundPage,
-    LandingPage,
-    PrivacyPage,
-} from '../routes';
+import { IndexPage, NotFoundPage, LandingPage, PrivacyPage } from '../routes';
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -34,7 +28,6 @@ function App() {
             <BrowserRouter>
                 <Switch>
                     <Route exact path="/" component={IndexPage} />
-                    <Route exact path="/rules" component={RulesPage} />
                     <Route
                         exact
                         path="/landing/:appName"

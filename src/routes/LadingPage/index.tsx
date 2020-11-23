@@ -34,6 +34,11 @@ class LandingPage extends Component<LandingPageProps, LandingPageState> {
                         />
                     ),
                 }}
+                storeUrl={
+                    appName === 'travellogger'
+                        ? 'https://apps.apple.com/kr/app/travel-logger/id1491698164'
+                        : ''
+                }
             />
         );
     }

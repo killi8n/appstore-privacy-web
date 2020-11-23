@@ -17,17 +17,15 @@ interface LandingTemplateProps {
         apple?: React.ReactNode;
         android?: React.ReactNode;
     };
+    storeUrl?: string;
 }
 
 class LandingTemplate extends Component<LandingTemplateProps> {
     render() {
-        const { appImageList } = this.props;
+        const { appImageList, storeUrl } = this.props;
         return (
             <TemplateWrapper>
-                <StoreTitle
-                    titleText="appstore"
-                    storeUrl="https://apps.apple.com/kr/app/travel-logger/id1491698164"
-                />
+                <StoreTitle titleText="appstore" storeUrl={storeUrl} />
                 {appImageList.apple && (
                     <AppImageListWrapper>
                         {appImageList.apple}
