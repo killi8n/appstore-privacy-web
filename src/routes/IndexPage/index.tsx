@@ -30,11 +30,16 @@ const AppButton = styled.div`
 
 const AppTitle = styled.h3`
     text-align: center;
+
+    @media (max-width: 414px) {
+        font-size: 15px;
+    }
 `;
 
 const AppImage = styled.img`
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
 `;
 
 const IndexPage = () => {
@@ -43,13 +48,18 @@ const IndexPage = () => {
             <AppButton>
                 <Link to="/landing/travellogger">
                     <AppTitle>Travel Logger</AppTitle>
-                    <AppImage src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.webp" />
+                    <AppImage
+                        src={require('../../assets/images/TravelLoggerAppIcon.png')}
+                    />
                 </Link>
             </AppButton>
 
             <AppButton>
                 <Link to="/landing/scheduler">
                     <AppTitle>너와 나의 스케줄러</AppTitle>
+                    <AppImage
+                        src={require('../../assets/images/SchedulerAppIcon.png')}
+                    />
                 </Link>
             </AppButton>
         </Wrapper>

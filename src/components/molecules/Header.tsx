@@ -15,6 +15,16 @@ const Title = styled.h2`
 
     display: flex;
     align-items: center;
+
+    @media (max-width: 414px) {
+        font-size: 18px;
+        padding-left: 1.5rem;
+    }
+
+    @media (max-width: 320px) {
+        font-size: 12px;
+        padding-left: 1rem;
+    }
 `;
 
 const PrivacyButton = styled.div`
@@ -26,7 +36,6 @@ const PrivacyButton = styled.div`
 
     display: flex;
     align-items: center;
-    /* border: 1px solid black; */
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     border-radius: 3px;
@@ -34,11 +43,23 @@ const PrivacyButton = styled.div`
 
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    @media (max-width: 320px) {
+        font-size: 8px;
+    }
 `;
 const PrivacyButtonText = styled.p`
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 0px;
+
+    @media (max-width: 414px) {
+        font-size: 12px;
+    }
+
+    @media (max-width: 320px) {
+        font-size: 8px;
+    }
 `;
 
 interface HeaderProps {

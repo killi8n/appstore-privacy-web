@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     border-left: 3px solid #228be6;
-    margin-left: 2.5rem;
+    margin-left: 2.25rem;
     background-color: #d0ebff;
     width: 15rem;
     padding-top: 8px;
@@ -11,11 +11,13 @@ const Wrapper = styled.div`
     margin-top: 1.5rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
+    display: flex;
+
     cursor: pointer;
 
     @media (max-width: 802px) {
-        width: 97%;
-        margin-left: 0.5rem;
+        width: calc(100vw - 3px);
+        margin-left: 0px;
     }
 `;
 const Title = styled.a`
@@ -25,6 +27,10 @@ const Title = styled.a`
     font-weight: bold;
     font-size: 20px;
     padding-right: 7rem;
+
+    @media (max-width: 414px) {
+        font-size: 18px;
+    }
 `;
 
 interface StoreTitleProps {

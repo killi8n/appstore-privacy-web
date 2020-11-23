@@ -5,10 +5,9 @@ import StoreTitle from '../molecules/StoreTitle';
 const TemplateWrapper = styled.div``;
 const AppImageListWrapper = styled.div`
     display: flex;
-    padding-left: 2.5rem;
-
+    margin-left: 1.5rem;
     @media (max-width: 802px) {
-        padding-left: 1rem;
+        margin-left: 0px;
     }
 `;
 
