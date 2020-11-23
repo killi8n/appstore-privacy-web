@@ -7,11 +7,23 @@ interface InnerComponentProps extends RouteComponentProps<PathParams> {}
 
 const withHeader = () => (WrappedComponent: React.ComponentType<any>) => {
     class InnerComponent extends React.Component<InnerComponentProps> {
+        componentDidMount() {
+            const { appName } = this.props.match.params;
+            if (
+                typeof appName === 'undefined' ||
+                (appName !== 'scheduler' && appName !== 'travellogger')
+            ) {
+                this.props.history.push('/404');
+            }
+        }
+
         render() {
             const { appName } = this.props.match.params;
-            if (typeof appName === 'undefined') {
-                this.props.history.push('/404');
-                return;
+            if (
+                typeof appName === 'undefined' ||
+                (appName !== 'scheduler' && appName !== 'travellogger')
+            ) {
+                return null;
             }
             return (
                 <>

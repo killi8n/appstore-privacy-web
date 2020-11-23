@@ -50,14 +50,18 @@ class Header extends Component<HeaderProps> {
     render() {
         const { titleText, appName } = this.props;
         return (
-            <TitleWrapper>
-                <Title>{titleText}</Title>
-                <Link to={`/privacy/${appName}`}>
-                    <PrivacyButton>
-                        <PrivacyButtonText>개인정보 처리방침</PrivacyButtonText>
-                    </PrivacyButton>
-                </Link>
-            </TitleWrapper>
+            <Link to={`/landing/${appName}`}>
+                <TitleWrapper>
+                    <Title>{titleText}</Title>
+                    <Link to={`/privacy/${appName}`}>
+                        <PrivacyButton>
+                            <PrivacyButtonText>
+                                개인정보 처리방침
+                            </PrivacyButtonText>
+                        </PrivacyButton>
+                    </Link>
+                </TitleWrapper>
+            </Link>
         );
     }
 }
