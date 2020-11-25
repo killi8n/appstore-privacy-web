@@ -36,6 +36,8 @@ const AppTitle = styled.h3`
     }
 `;
 
+const AppImagePicture = styled.picture``;
+
 const AppImage = styled.img`
     width: 150px;
     height: 150px;
@@ -48,18 +50,66 @@ const IndexPage = () => {
             <AppButton>
                 <Link to="/landing/travellogger">
                     <AppTitle>Travel Logger</AppTitle>
-                    <AppImage
-                        src={require('../../assets/images/TravelLoggerAppIcon.png')}
-                    />
+                    <AppImagePicture>
+                        <source
+                            srcSet="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.webp 1x, https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp 2x"
+                            type="image/webp"
+                        />
+                        <source
+                            srcSet="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png 1x, https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.png 2x"
+                            type="image/png"
+                        />
+                        <source
+                            srcSet="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/217x0w.webp 1x, https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/434x0w.webp 2x"
+                            type="image/webp"
+                        />
+                        <source
+                            srcSet="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/217x0w.png 1x, https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/434x0w.png 2x"
+                            type="image/png"
+                        />
+                        <source
+                            srcSet="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp 1x, https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/492x0w.webp 2x"
+                            type="image/webp"
+                        />
+                        <source
+                            srcSet="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png 1x, https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/492x0w.png 2x"
+                            type="image/png"
+                        />
+                        <AppImage src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png 1x, https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fb/fd/09/fbfd0919-4b63-027f-a8ee-383e30ca2cd0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/492x0w.png" />
+                    </AppImagePicture>
                 </Link>
             </AppButton>
 
             <AppButton>
                 <Link to="/landing/scheduler">
                     <AppTitle>너와 나의 스케줄러</AppTitle>
-                    <AppImage
-                        src={require('../../assets/images/SchedulerAppIcon.png')}
-                    />
+                    <AppImagePicture>
+                        <source
+                            srcSet="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.webp 1x, https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp 2x"
+                            type="image/webp"
+                        />
+                        <source
+                            srcSet="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png 1x, https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.png 2x"
+                            type="image/png"
+                        />
+                        <source
+                            srcSet="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/217x0w.webp 1x, https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/434x0w.webp 2x"
+                            type="image/webp"
+                        />
+                        <source
+                            srcSet="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/217x0w.png 1x, https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/434x0w.png 2x"
+                            type="image/png"
+                        />
+                        <source
+                            srcSet="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp 1x, https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/492x0w.webp 2x"
+                            type="image/webp"
+                        />
+                        <source
+                            srcSet="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png 1x, https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/492x0w.png 2x"
+                            type="image/png"
+                        />
+                        <AppImage src="https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png 1x, https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/10/00/2d/10002dac-d791-75fd-b98d-b9a529730bc6/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/492x0w.png" />
+                    </AppImagePicture>
                 </Link>
             </AppButton>
         </Wrapper>
