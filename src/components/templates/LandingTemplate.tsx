@@ -16,7 +16,10 @@ interface LandingTemplateProps {
         apple?: React.ReactNode;
         android?: React.ReactNode;
     };
-    storeUrl?: string;
+    storeUrl?: {
+        apple: string;
+        android: string;
+    };
 }
 
 class LandingTemplate extends Component<LandingTemplateProps> {
@@ -24,13 +27,21 @@ class LandingTemplate extends Component<LandingTemplateProps> {
         const { appImageList, storeUrl } = this.props;
         return (
             <TemplateWrapper>
-                <StoreTitle titleText="appstore" storeUrl={storeUrl} />
+                <StoreTitle titleText="appstore" storeUrl={storeUrl?.apple} />
                 {appImageList.apple && (
                     <AppImageListWrapper>
                         {appImageList.apple}
                     </AppImageListWrapper>
                 )}
-                <StoreTitle titleText="playstore" />
+                <StoreTitle
+                    titleText="playstore"
+                    storeUrl={storeUrl?.android}
+                />
+                {appImageList.android && (
+                    <AppImageListWrapper>
+                        {appImageList.android}
+                    </AppImageListWrapper>
+                )}
             </TemplateWrapper>
         );
     }
